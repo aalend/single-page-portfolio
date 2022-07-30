@@ -1,0 +1,83 @@
+@use '../config/variables' as *;
+@use '../mixins/generators' as *;
+
+:root {
+  @include generateCustomProperty('space', $spacing);
+  @include generateCustomProperty('font', $fontFamily);
+  @include generateCustomProperty('text', $textSize);
+  @include generateCustomProperty('text', $textWeight);
+  @include generateCustomProperty('leading', $leading);
+  @include generateCustomProperty('color', $colors);
+  @include generateCustomProperty('radius', $radius);
+  @include generateCustomProperty('measure', $measure);
+}
+
+.margin {
+  @include generateUtilityClass('margin', $spacing);
+}
+
+.margin-block {
+  @include generateUtilityClass('margin-block', $spacing);
+}
+
+.margin-inline {
+  @include generateUtilityClass('margin-inline', $spacing);
+}
+
+.margin-block-start {
+  @include generateUtilityClass('margin-block-start', $spacing);
+}
+
+.margin-block-end {
+  @include generateUtilityClass('margin-block-end', $spacing);
+}
+
+.padding {
+  @include generateUtilityClass('padding', $spacing);
+}
+
+.padding-block {
+  @include generateUtilityClass('padding-block', $spacing);
+}
+
+.padding-inline {
+  @include generateUtilityClass('padding-inline', $spacing);
+}
+
+.padding-block-start {
+  @include generateUtilityClass('padding-block-start', $spacing);
+}
+
+.padding-block-end {
+  @include generateUtilityClass('padding-block-end', $spacing);
+}
+
+.gap {
+  @include generateUtilityClass('gap', $spacing);
+}
+
+.bg {
+  @include generateUtilityClass('background-color', $colors);
+}
+
+.font {
+  @include generateUtilityClass('font-family', $fontFamily);
+}
+
+.text {
+  @include generateUtilityClass('font-size', $textSize);
+  @include generateUtilityClass('font-weight', $textWeight);
+  @include generateUtilityClass('color', $colors);
+}
+
+.leading {
+  @include generateUtilityClass('line-height', $leading);
+}
+
+.measure {
+  @include generateUtilityClass('max-width', $measure);
+}
+
+.radius {
+  @include generateUtilityClass('border-radius', $radius);
+}

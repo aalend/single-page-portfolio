@@ -1,0 +1,23 @@
+@use 'sass:map';
+@use '../config' as *;
+
+.hero {
+  &__grid {
+    display: grid;
+    grid-template-areas:
+      'graphicDesign graphicDesign'
+      'graphicDesign graphicDesign'
+      'uiux apps'
+      'illustrations illustrations'
+      'photography photography'
+      'motionGraphic motionGraphic';
+    gap: var(--space-md);
+
+    @media (min-width: map.get($mediaQuery, tablet)) {
+      grid-template-areas:
+        'graphicDesign graphicDesign uiux apps'
+        'graphicDesign graphicDesign illustrations illustrations'
+        'photography photography motionGraphic motionGraphic';
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.swiper {
+  width: 100vw;
+  margin-inline-start: calc(50% - 50vw) !important;
+
+  img {
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+  }
+}

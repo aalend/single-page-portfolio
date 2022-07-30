@@ -1,0 +1,10 @@
+@use './config' as *;
+
+:where(h1, h2) {
+  font-weight: var(--text-bold);
+  line-height: var(--leading-tight);
+}
+
+body {
+  overflow-x: hidden;
+}

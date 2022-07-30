@@ -1,0 +1,33 @@
+@use 'sass:map';
+@use '../config' as *;
+
+.about {
+  & > * {
+    --gap: var(--space-2xl);
+    align-items: center;
+
+    @media (min-width: map.get($mediaQuery, tablet)) {
+      --gap: 0;
+
+      img {
+        margin-inline-start: -5.5rem;
+      }
+    }
+
+    @media (min-width: map.get($mediaQuery, desktop)) {
+      --gap: var(--space-2xl);
+
+      img {
+        margin-inline-start: 0;
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    @media (min-width: map.get($mediaQuery, tablet)) {
+      text-align: left;
+    }
+  }
+}
