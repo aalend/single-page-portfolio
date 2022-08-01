@@ -19,5 +19,10 @@
         'graphicDesign graphicDesign illustrations illustrations'
         'photography photography motionGraphic motionGraphic';
     }
+    @media (min-width: map.get($mediaQuery, desktop)) {
+      grid-template-areas:
+        'graphicDesign graphicDesign uiux apps photography photography'
+        'graphicDesign graphicDesign illustrations illustrations motionGraphic motionGraphic';
+    }
   }
 }
