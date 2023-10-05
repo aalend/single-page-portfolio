@@ -23,6 +23,8 @@ Engaging in this project will challenge your layout skills, particularly in achi
 3. Install dependencies with `pnpm install`
 4. Start development server `pnpm run dev`
 
+Or see live website on [Single page portfolio](https://single-page-portfolio-fem.netlify.app/)
+
 ## Project Goals
 
 The primary objective of this project was to experiment with layouts and gain insights into how browsers handle default rendering. It involved exploring various contexts and recommending approaches that could be easily applied and reused in future projects.
